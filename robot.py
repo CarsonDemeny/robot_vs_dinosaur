@@ -8,6 +8,6 @@ class Robot:
     
     def attack(self, dinosaur):
         print(f'{self.name} attacked {dinosaur.name} with {self.active_weapon.name} and dealt {self.active_weapon.attack_power} damage!')
-        dinosaur.health -= self.active_weapon.attack_power
+        dinosaur.health = dinosaur.health - self.active_weapon.attack_power
         print(f'{dinosaur.name} has {dinosaur.health} health remaining!')
         
